@@ -1,0 +1,44 @@
+Frameworke :-
+    A Framework is a ready-made architecture whic  consists of a set of classes and interfaces. 
+          for backend [ Hibernate, Spring Boot, etc.]
+          for frontend [ angular js, reactjs etc]
+          for testing  [ playright etc ]
+
+**why we need collection frame work 
+--> to store multiple object or group of object together 
+
+*Limitation of Array 
+--------------------------
+--> the size of  the array is fixed we cannot reduce or increase dynamically during the execution of the program.
+--> Array is collection of homogeneous elements.
+--> array manipulation such as 
+    1. remove an element from on array.
+    2.adding the element in b/w the array etc 
+
+** therefore to avoid the limitaion of the array we can store the group of the object or element using diffrent data structure 
+   such as 
+   1. list 
+   2. set 
+   3. Queue
+   4. map/dictionaries
+
+collection of fromework :--
+ collection framework is set of classes and interfaces which provide mechanism to slove group of object (element ) toString 
+
+ ** it also provide mechanism to perform actions such as 
+    1.CRUD operation 
+    2.access the elemrnt
+    3.create and add an element 
+    4.remove and delete the element 
+    5.search element 
+
+different between array and collection
+ 
+ Array                              | collection
+1. Array is fixed size              | 1. it is not fixed size
+2. Accepts homogeneous data         | 2. Can accept heterogeneous data
+3. Accepts both PD and NPD Data     | 3. it will only accept NPD 
+4. Array does not Support generic   | 4. Collection support generic 
+
+************collection hierarchy in Java*********
+    Link of Image :-  https://www.scientecheasy.com/2020/09/collection-hierarchy-in-java.html/
