@@ -42,3 +42,110 @@ different between array and collection
 
 ************collection hierarchy in Java*********
     Link of Image :-  https://www.scientecheasy.com/2020/09/collection-hierarchy-in-java.html/
+
+** Collection interface :-
+        1. Collection is an interface defined in java.util.
+        2.collection interface provide the mechanism to store group of objects(elements) together
+        3.All the element in the collection are store in the form  of objects (i.e only non-primitive is allowed )
+        4. which helps the programmer to perform the follwing task
+            a.add an element into the collection 
+            b.search an element in the collection 
+            c.remove an element from the collection 
+            d. access the elements present in the coolection
+
+**Method of collection interface :
+|---------------------------------------------------------------------------------------------------------
+|
+|   purpose                                 |       return            |          method signature
+|--------------------------------------------------------------------------------------------------------
+|
+|   1. add an element                       |                          |          1. add(object)
+|                                           |                          |          2. add(collection)
+|--------------------------------------------------------------------------------------------------------                                       
+|   2.search an element remove element      |                          |          1.Contains(Object)
+|                                           |                          |          2.ContainsAll(Collection)
+|------------------------------------------------------------------------------------------------------------
+|   3. Remove Element                       |                          |          1.remove(Object)
+|                                           |                          |          2.removeAll(collection)
+|                                           |                          |          3.retainAll(Collection)
+|                                           |                          |          4.clear()
+| -------------------------------------------------------------------------------------------------------------
+|  4. Access  elements                      |     Iterator             |          1.Iterator()
+|                                           |                          |          2.we can access elements with 
+|                                           |                          |            the helps of for each loop
+|-------------------------------------------------------------------------------------------------------------------
+| 5. Miscellapeous                          |                          |          1. Size()
+|                                           |                          |          2. isEmpty()
+|                                           |                          |          3. toArray()
+|                                           |                          |          4. hashCode()  
+|                                           |                          |          5. equal()
+|-------------------------------------------------------------------------------------------------------------------
+
+**List interface:-
+    List is an sub interface of collection interface
+    Present inside java.util pakage
+    it will follow linear data structure 
+    it will have all the methods of collection interface
+
+** Characteristics of List interface :
+    insertion order is maintain
+    duplicates are allowed
+    null value can be added
+    it is index based
+
+** Implementation class :
+    ArrayList
+    LinkedList
+    Vector
+    Stack
+
+**ArrayList :-
+    ArrayList is an implentation (sub class) of list interface 
+    interface from JDK 1.2
+    present inside java.util pakage
+    ArrayList will  store the data in the form of Array type  of object
+    initial capacity of arraylist  10
+    incrementation of capacity (Current capacity*3/2)+2
+    it will follow global  array data structure
+    it is suitable for search or fetch
+** Important Method :
+----------------------------
+add(object)
+add(int index, object,etc)--> insert 
+set(int index object etc )-->update
+Remove(object) 
+Remove(int index)
+get(in index)
+indexof()
+
+Example:--
+  public class Demo{
+    public static void main(String[] args){
+        ArrayList al = new ArrayList<>();
+        al.add(1);
+        al.add("XYZ");
+        al.add('A');
+        al.add(true);
+        al.add(53.2);
+        al.add(9608212323l);
+        al.add(1);
+        al.add(null);
+        System.out.println(al);
+        al.remove(53.2);
+        System.out.println(al);
+        al.add(4, 53.2);
+        System.out.println(al);
+        al.set(6,"vishal");
+        System.out.println(al);
+        al.remove(8);
+        System.out.println(al);
+        System.out.println(al.contains("null"));
+        System.out.println(al.contains(2));
+        System.out.println(al.get(7));
+        al.clear();
+        System.out.println(al.isEmpty());
+        
+
+    }
+  }
+
