@@ -121,7 +121,7 @@ indexof()
 Example:--
   public class Demo{
     public static void main(String[] args){
-        ArrayList al = new ArrayList<>();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(1);
         al.add("XYZ");
         al.add('A');
@@ -149,3 +149,46 @@ Example:--
     }
   }
 
+** Types of Collection  :-
+-----------------------------
+We can classify the collection into two categories
+ 1.non-generic collection
+ 2.generic collection
+
+1. Non-Generic Collection :-
+    it is a heterogeneous (different type ) collection of object (element)
+    every element is converted and stored as java.lang Object class type
+
+2.Generic Collection :-
+    it is a homogeneous  collection of object element (collection of same type of elements
+
+
+Sysntax to create Generic Collection:
+-------------------------------------
+1. Sysntax to create reference variable for generic collection
+   collection_type<Non-primitive datatype> variable
+    ArrayList<Integer> is;
+2.Sysntax to creayte Generic collection object
+   new collection_name <Datatype>0;
+   new ArrayList<Integer>();
+
+ArrayList<Integer> Is = new ArrayList<Integer>();
+arrayList where we can store only integers
+            from JDK 7 onwards.
+ ArrayList<Integer> Is = new ArrayList<>();
+
+ example:
+ ----------------
+  public class Demo{
+    public static void main(String[] args){
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        System.out.println(al);
+    }
+  }
+       
+NoSuchElementExeption:-
+-----------------------------
+ in the Iterator when we try to access an element using next() method and if there is no element present in the collection then it will throw NoSuchElementException.
